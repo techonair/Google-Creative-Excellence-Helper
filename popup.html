@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Page Data to Google Sheets</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Sender</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      width: 250px;
+      background-color: #000000db;
+    }
+
+    #logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    #logo {
+      width: 75px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+
+    h4 {
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: rgba(255, 179, 0, 0.849);
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    #sendData {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #sendData:hover {
+      background-color: #0056b3;
+    }
+
+    #status {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  </style>
 </head>
 <body>
-  <h2>Send Data to Google Sheets</h2>
+  <div id="logo-container">
+    <img id="logo" src="logo.png" alt="Data Transfer Tool Logo">
+  </div>
+  <h2>Send Data to API</h2>
+  <h4>Creative Excellence Helper</h4>
   <button id="sendData">Send Data</button>
   <p id="status"></p>
+
+  <!-- Link to the JavaScript file -->
   <script src="popup.js"></script>
 </body>
 </html>
