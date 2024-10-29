@@ -23,8 +23,8 @@ function extractCaseDetails() {
         FieldI: null
     };
 
-    // Locate the specific div containing the message content using getElementById
-    const messageContent = document.getElementById(':9l'); // Change here
+    // Locate the specific div containing the message content
+    const messageContent = document.querySelector('div.a3s.aiL');
 
     // Check if the message content is found
     if (!messageContent) {
